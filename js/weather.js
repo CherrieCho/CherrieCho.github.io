@@ -1,7 +1,7 @@
 function onGeoOk(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${globalVariable.API_KEY}&units=metric`
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid='dd21ea36c1e98e9f075d4a9e5386c5bc'&units=metric`
   fetch(url)
   .then(response => response.json())
   .then(data => {
